@@ -23,9 +23,9 @@ const addExcitement = (theWordArray, punct, punctNumber) => {
         const word = theWordArray[i]
         // Print buildMeUp to the console
         if (place % 3 === 0) {
-            buildMeUp += word + punctuation + " "
+            buildMeUp += `${word}${punctuation} `
         } else {
-            buildMeUp += word + " "
+            buildMeUp += `${word} `
         }
         place += 1
         console.log(buildMeUp)
@@ -34,4 +34,4 @@ const addExcitement = (theWordArray, punct, punctNumber) => {
 }
 
 // Invoke the function and pass in the array
-addExcitement(sentence, "*", 10)
+addExcitement(sentence, "🎃", 7)
